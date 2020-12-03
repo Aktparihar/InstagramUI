@@ -1,21 +1,35 @@
-<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent">
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="500dp"
         android:layout_alignParentTop="true">
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <androidx.appcompat.widget.Toolbar
+            <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+                android:id="@+id/topNavViewBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/tabs"
-                android:background="@drawable/white_grey_border_bottom">
+                android:minHeight="50dp"
+                android:background="@drawable/white_grey_border_bottom"
+                app:menu="@menu/top_navigation_bar">
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleX="4.5"
+                    android:scaleY="4.5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="85dp"
+                    android:src="@drawable/ic_instagram">
 
-            </androidx.appcompat.widget.Toolbar>
+                </ImageView>
+
+            </com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
 
         </com.google.android.material.appbar.AppBarLayout>
 
